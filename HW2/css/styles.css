@@ -8,6 +8,11 @@ h1 {
 	font-size: 175%;
 }
 
+.container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 /*
 h2 {
 	font-size: 125%;
@@ -24,10 +29,7 @@ h2 {
 section {
 	position: relative;
 	border: 1px solid black;
-	background-color: #A52A2A;
-	height: 100px;
-	margin-right: auto;
-	margin-left: auto;
+	background-color: grey;
 	font-family: Helvetica;
 }
 
@@ -43,25 +45,38 @@ section h2 {
 	background-color: yellow;
 }
 
+/*.row: nth-child(2) h2 {
+	background-color: green;
+}
+
+.row: nth-child(3) h2 {
+	background-color: #000099;
+}*/
+
+section p {
+	margin-top: 40px;
+}
+
 /* Simple Responsive Framework. */
 .row {
 	width: 100%;
 	float: left;
+	padding: 15px;
 }
 
 /* desktop browser window*/
 @media (min-width: 992px) {
-	.cell {
+	.row {
 		width: 33.33%
 	}
 }
 
 /* tablet view */
 @media (min-width: 768px) and (max-width: 991px) {
-	.cell {
+	.row {
 		width: 50%
 	}
-	.cell:nth-child(3) {
+	.row:nth-child(3) {
 	    width: 100%;
 	  }
 }
