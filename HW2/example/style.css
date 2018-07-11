@@ -23,7 +23,7 @@ section {
   position: relative;
   border: 1px solid black;
   padding: 30px 15px 15px;
-  background-color: lightgrey;
+  background-color: grey;
 }
 
 section h2 {
@@ -36,18 +36,18 @@ section h2 {
   background-color: coral;
 }
 
-.cell:nth-child(2) h2 {
+.row:nth-child(2) h2 {
   background-color: firebrick;
   color: white;
 }
 
-.cell:nth-child(3) h2 {
+.row:nth-child(3) h2 {
   background-color: burlywood;
 }
 
 /* mobile */
 /* base case */
-.cell {
+.row {
   margin: 0;
   padding: 15px;
   width: 100%;
@@ -56,16 +56,16 @@ section h2 {
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 991px) {
-  .cell {
+  .row {
     width: 50%;
   }
-  .cell:nth-child(3) {
+  .row:nth-child(3) {
     width: 100%;
   }
 }
 /* desktop */
 @media (min-width: 992px) {
-  .cell {
+  .row {
     width: 33.333%
   }
 }
